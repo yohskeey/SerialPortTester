@@ -127,6 +127,7 @@ namespace SerialPortConnectModule.ViewModels
         }
 
         public DelegateCommand Clicked { get; private set; }
+        public DelegateCommand CheckClicked { get; private set; }
 
 
         public ViewAViewModel()
@@ -148,6 +149,8 @@ namespace SerialPortConnectModule.ViewModels
             this.Clicked = new DelegateCommand(
               OnConnectClick, // 実行される内容
               () => true); // 実行できるか？
+
+            this.CheckClicked = new DelegateCommand(ReloadSerialParameter, () => true);
 
             this.SerialPortCtrl.SP.PinChanged += SP_PinChanged;
         }
