@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialPortTester", "SerialPortTester\SerialPortTester.csproj", "{8EA70B14-7C30-400D-B33E-72EE47FF63D8}"
 EndProject
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7474ECD5-DFE1-4A30-8A39-8BAA5A340E33}
+		SolutionGuid = {48E0AEE9-403A-44BB-A6C1-B73249B5F28A}
 	EndGlobalSection
 EndGlobal
