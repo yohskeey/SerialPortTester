@@ -26,7 +26,7 @@ namespace SerialPortConnectModule.Model
         /// ポートの一覧
         /// </summary>
         /// <returns></returns>
-        public string[] GetPortNames() => SerialPort.GetPortNames();
+        public static string[] GetPortNames() => SerialPort.GetPortNames();
 
         public bool Connect(string port, int baudrate, int dataBits, int stopBits, int parity, int handshake, bool dtr, bool rts)
         {

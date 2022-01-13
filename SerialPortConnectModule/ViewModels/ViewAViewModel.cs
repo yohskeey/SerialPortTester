@@ -53,7 +53,7 @@ namespace SerialPortConnectModule.ViewModels
             set => SetProperty(ref this.dataBits, value);
         }
 
-        public string[] ComboBoxStopbits => new string[] { "None", "One", "Two", "OnePointFive" };
+        public static string[] ComboBoxStopbits => new string[] { "None", "One", "Two", "OnePointFive" };
         private int comboBoxStopbitsSelectIndex;
         public int ComboBoxStopbitsSelectIndex
         {
@@ -61,7 +61,7 @@ namespace SerialPortConnectModule.ViewModels
             set => SetProperty(ref this.comboBoxStopbitsSelectIndex, value);
         }
 
-        public string[] ComboBoxParity => new string[] { "None", "Odd", "Even", "Mark", "Space" };
+        public static string[] ComboBoxParity => new string[] { "None", "Odd", "Even", "Mark", "Space" };
         private int comboBoxParitySelectIndex;
         public int ComboBoxParitySelectIndex
         {
@@ -69,7 +69,7 @@ namespace SerialPortConnectModule.ViewModels
             set => SetProperty(ref this.comboBoxParitySelectIndex, value);
         }
 
-        public string[] ComboBoxHandshake => new string[] { "None", "XOnXOff", "RequestToSend", "RequestToSendXOnXOff" };
+        public static string[] ComboBoxHandshake => new string[] { "None", "XOnXOff", "RequestToSend", "RequestToSendXOnXOff" };
         private int comboBoxHandshakeSelectIndex;
         public int ComboBoxHandshakeSelectIndex
         {
@@ -135,7 +135,7 @@ namespace SerialPortConnectModule.ViewModels
             //パラメータ初期化
             this.Message = "View A from your Prism Module";
             this.SerialPortCtrl = new SerialPortControl();
-            this.ComboBoxItem = this.SerialPortCtrl.GetPortNames();
+            this.ComboBoxItem = SerialPortControl.GetPortNames();
             this.ComboBoxSelectIndex = 0;
             this.BaudRate = 2400;
             this.DataBits = 7;
